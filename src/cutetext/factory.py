@@ -1,10 +1,11 @@
-from . import TINY_TEXT, tiny_text_map, TinyTextConverter
-import typing
+from .consts import TINY_TEXT,BLACK_BUBBLE_TEXT, BUBBLE_TEXT
+from .converters import TinyTextConverter
 
 class CuteTextConverter:
     def _get_converter(self, format: TINY_TEXT):
         if format == TINY_TEXT:
             return TinyTextConverter()
-    
-    def _convert_to_cute_text(self, text: str) -> str:
-        return text.translate(tiny_text_map)
+        if format == BUBBLE_TEXT:
+            return TinyTextConverter()
+        if format == BLACK_BUBBLE_TEXT:
+            return TinyTextConverter()
