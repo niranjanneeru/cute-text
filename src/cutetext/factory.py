@@ -2,6 +2,9 @@ from .consts import TINY_TEXT,BLACK_BUBBLE_TEXT, BUBBLE_TEXT
 from .converters import TinyTextConverter, BlackBubbleTextConverter, BubbleTextConverter
 
 class CuteTextConverter:
+    def convert(self, text, format):
+        return self._get_converter(format).convert(text)
+    
     def _get_converter(self, format: TINY_TEXT):
         if format == TINY_TEXT:
             return TinyTextConverter()
