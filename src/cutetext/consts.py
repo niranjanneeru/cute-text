@@ -1,0 +1,1 @@
+TINY_TEXT = "TINY_TEXT"
