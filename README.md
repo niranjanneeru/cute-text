@@ -23,6 +23,7 @@ pip install cutetext
 ```python
 from cutetext import CuteTextConverter
 from cutetext import TINY_TEXT, BUBBLE_TEXT, BLACK_BUBBLE_TEXT
+
 print(CuteTextConverter().convert("Hello World!", TINY_TEXT))
 print(CuteTextConverter().convert("Hello World!", BUBBLE_TEXT))
 print(CuteTextConverter().convert("Hello World!", BLACK_BUBBLE_TEXT))
