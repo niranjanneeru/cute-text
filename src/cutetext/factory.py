@@ -1,5 +1,5 @@
-from .consts import TINY_TEXT,BLACK_BUBBLE_TEXT, BUBBLE_TEXT, CURSIVE_TEXT
-from .converters import TinyTextConverter, BlackBubbleTextConverter, BubbleTextConverter, CursiveTextConverter
+from .consts import TINY_TEXT,BLACK_BUBBLE_TEXT, BUBBLE_TEXT, CURSIVE_TEXT, DOUBLE_STRUCK_TEXT
+from .converters import TinyTextConverter, BlackBubbleTextConverter, BubbleTextConverter, CursiveTextConverter, DoubleStruckTextConverter
 
 class CuteTextConverter:
     def convert(self, text, format):
@@ -14,3 +14,5 @@ class CuteTextConverter:
             return BlackBubbleTextConverter()
         if format == CURSIVE_TEXT:
             return CursiveTextConverter()
+        if format == DOUBLE_STRUCK_TEXT:
+            return DoubleStruckTextConverter()

@@ -1,5 +1,5 @@
 from abc import ABC, abstractmethod
-from .maps import tiny_text_map, black_bubble_text_map, bubble_text_map, cursive_text_map
+from .maps import tiny_text_map, black_bubble_text_map, bubble_text_map, cursive_text_map, double_struck_text_map
 
 class ConverterInterface(ABC):
     @abstractmethod
@@ -25,3 +25,8 @@ class CursiveTextConverter(ConverterInterface):
 
     def convert(self, text: str) -> str:
         return text.translate(cursive_text_map)
+
+class DoubleStruckTextConverter(ConverterInterface):
+
+    def convert(self, text: str) -> str:
+        return text.translate(double_struck_text_map)
