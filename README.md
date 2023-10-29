@@ -1,5 +1,7 @@
 # Cute Text
 
+[![Publish Python 🐍 distribution 📦 to PyPI](https://github.com/niranjanneeru/cute-text/actions/workflows/release.yml/badge.svg)](https://github.com/niranjanneeru/cute-text/actions/workflows/release.yml)
+
 Text Converter - Can be used with chat bots
 
 1. Convert to Tiny Text
